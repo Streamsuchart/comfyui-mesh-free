@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.idea/
+.vscode/
+
+# install.bat clones ComfyUI inside the server folder; don't track it
+server/ComfyUI/
+
+# never commit model weights
+*.safetensors
+*.ckpt
+*.bin
+*.gguf
+
+# scratch
+*.log
+*.tmp
+
+# per-user GUI state
+mesh_server_gui_settings.json
+mesh_server_ltx_gui_settings.json
+
+# Claude / agent working notes — internal, not for the public repo
+CLAUDE.md
